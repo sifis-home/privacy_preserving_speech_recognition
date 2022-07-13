@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "privacy_preserving_speech_recognition"
+version = "0.1.0"
+description = ""
+authors = ["WisamAbbasi <39978331+WisamAbbasi@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7.6,<3.11"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+deepspeech = "0.9.3"
+numpy = "1.19.5"
+Wave = "0.0.2"
+spacy = "3.3.1"
+pre-commit = "^2.20.0"
+coverage = {extras = ["toml"], version = "^6.4.1"}
+flake8 = "^4.0.1"
+flake8-bugbear = "^22.7.1"
+pylint= "2.14.1"
+isort = "^5.10.1"
+black = "22.3.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
