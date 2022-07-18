@@ -17,8 +17,6 @@ RUN curl -O https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deeps
 COPY deep_streaming.py /Privacy_Preserving_Speech_Recognition
 COPY deep_wavFile.py /Privacy_Preserving_Speech_Recognition
 COPY record_audio.py /Privacy_Preserving_Speech_Recognition
-COPY deepspeech-0.9.3-models.pbmm /Privacy_Preserving_Speech_Recognition
-COPY deepspeech-0.9.3-models.scorer /Privacy_Preserving_Speech_Recognition
 COPY sample1.wav /Privacy_Preserving_Speech_Recognition
 COPY sample2.wav /Privacy_Preserving_Speech_Recognition
 COPY sample3.wav /Privacy_Preserving_Speech_Recognition
