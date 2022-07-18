@@ -11,8 +11,8 @@ RUN poetry install
 
 RUN python -m spacy download en_core_web_sm
 
-RUN curl -O deepspeech-0.9.3-models.pbmm https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm
-RUN curl -O deepspeech-0.9.3-models.scorer https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer
+RUN curl https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.pbmm --output deepspeech-0.9.3-models.pbmm
+RUN curl https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/deepspeech-0.9.3-models.scorer --output deepspeech-0.9.3-models.scorer
 
 COPY deep_streaming.py /Privacy_Preserving_Speech_Recognition
 COPY deep_wavFile.py /Privacy_Preserving_Speech_Recognition
